@@ -9,7 +9,8 @@ void insertionSort(int a[], int n){
     }
 }
 void printarr(int a[], int n){
-    for (int i = 0; i < n; ++i)
+    int i;
+    for (i = 0; i < n; ++i)
         printf("%d  ", a[i]);
 }
 void main(){
