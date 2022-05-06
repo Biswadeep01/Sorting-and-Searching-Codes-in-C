@@ -1,5 +1,5 @@
 #include<stdio.h>
-merge(int a[],int low,int mid,int high){
+void merge(int a[],int low,int mid,int high){
     int i,j,k,temp[10];
     i=low;
     j=mid+1;
@@ -28,7 +28,7 @@ merge(int a[],int low,int mid,int high){
     for(i=low;i<=high;i++)
         a[i]=temp[i];
 }
-mergesort(int a[],int low,int high){
+void mergesort(int a[],int low,int high){
     int mid;
     if(low<high){
         mid=(low+high)/2;
