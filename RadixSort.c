@@ -1,8 +1,8 @@
 #include <stdio.h>
-int getMax(int a[], int n)
-{
+int getMax(int a[], int n){
+    int i;
     int max = a[0];
-    for (int i = 1; i < n; i++){
+    for (i = 1; i < n; i++){
         if (a[i] > max)
             max = a[i];
     }
@@ -29,7 +29,8 @@ void radixsort(int a[], int n){
         countingSort(a, n, p);
 }
 void printArray(int a[], int n){
-    for (int i = 0; i < n; ++i)
+    int i;
+    for (i = 0; i < n; ++i)
         printf("%d  ", a[i]);
     printf("\n");
 }
